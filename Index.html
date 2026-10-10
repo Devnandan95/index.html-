@@ -1,1 +1,21 @@
 
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Milkwala</title>
+</head>
+<body>
+<h1>🥛 Milkwala</h1>
+<h2>दूध हिसाब ऐप</h2>
+<p>ग्राहक का नाम</p>
+<input placeholder="नाम लिखें">
+<p>दूध (लीटर)</p>
+<input id="litre" type="number" placeholder="लीटर">
+<p>रेट (₹ प्रति लीटर)</p>
+<input id="rate" type="number" placeholder="रेट">
+<button onclick="document.getElementById('total').innerText='कुल रुपये: ₹'+(Number(document.getElementById('litre').value)*Number(document.getElementById('rate').value))">हिसाब करें</button>
+<h3 id="total">कुल रुपये: ₹0</h3>
+</body>
+</html>
